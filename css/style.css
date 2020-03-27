@@ -10774,6 +10774,13 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.distortion {
+  width: 640px;
+  height: 920px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: #000000;

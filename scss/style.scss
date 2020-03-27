@@ -27,6 +27,11 @@ $secondary: #a0f669;
     transition:         all $transition ease;
 }
 
+.distortion{
+	width: 640px;
+	height: 920px ;
+	align-self : flex-end;
+}
 html {
 	// overflow-x: hidden;
 }

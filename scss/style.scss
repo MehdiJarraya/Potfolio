@@ -881,6 +881,19 @@ h1, h2, h3, h4, h5,
 		letter-spacing: 3px;
 		text-transform: uppercase;
 	}
+
+	.keyword:link, .keyword:visited {
+		color:#999999;
+		// background-color: #333;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: inline-block;
+		transition: all .2s; }
+	  .keyword:hover, .keyword:active {
+		color:$primary;
+		box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+		transform: rotate(5deg) scale(1.3); }
+	
 }
 
 //SERVICES

@@ -28,7 +28,8 @@ $secondary: #a0f669;
 }
 
 html {
-	// overflow-x: hidden;
+	// 1rem =10px 
+	font-size:10px;
 }
 body {
 	font-family: $font-primary;
@@ -810,6 +811,82 @@ h1, h2, h3, h4, h5,
 		}
 	}
 }
+
+.btnAnimated {
+    &,
+    &:link,
+    &:visited {
+
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 12px;
+        border: none;
+		cursor: pointer;
+		// @include border-radius(40px);
+		letter-spacing: 2px;
+		font-weight: 600;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($black,.2);
+    }
+    
+    &--yellow {
+        background-color: $primary !important;
+        color: $black !important;
+
+        &::after {
+            background-color: $primary !important;
+        }
+	}
+	
+	&--white {
+		background-color: $black !important;
+		border: 1px solid $white !important;
+        color: $white !important;
+
+        &::after {
+            background-color: $black;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
 
 
 //FTCO ABOUT

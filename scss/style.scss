@@ -811,6 +811,70 @@ h1, h2, h3, h4, h5,
 	}
 }
 
+.btnAnimated {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 12px;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($black,.2);
+    }
+    
+    &--yellow {
+        background-color: $primary;
+        color: $black;
+
+        &::after {
+            background-color: $primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+
 
 //FTCO ABOUT
 .ftco-about{

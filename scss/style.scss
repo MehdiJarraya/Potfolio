@@ -28,7 +28,8 @@ $secondary: #a0f669;
 }
 
 html {
-	// overflow-x: hidden;
+	// 1rem =10px 
+	font-size:10px;
 }
 body {
 	font-family: $font-primary;
@@ -815,6 +816,7 @@ h1, h2, h3, h4, h5,
     &,
     &:link,
     &:visited {
+
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
@@ -823,10 +825,11 @@ h1, h2, h3, h4, h5,
         transition: all .2s;
         position: relative;
         font-size: 12px;
-
-        //Change for the <button> element
         border: none;
-        cursor: pointer;
+		cursor: pointer;
+		// @include border-radius(40px);
+		letter-spacing: 2px;
+		font-weight: 600;
     }
     
     &:hover {
@@ -847,11 +850,21 @@ h1, h2, h3, h4, h5,
     }
     
     &--yellow {
-        background-color: $primary;
-        color: $black;
+        background-color: $primary !important;
+        color: $black !important;
 
         &::after {
-            background-color: $primary;
+            background-color: $primary !important;
+        }
+	}
+	
+	&--white {
+		background-color: $black !important;
+		border: 1px solid $white !important;
+        color: $white !important;
+
+        &::after {
+            background-color: $black;
         }
     }
     

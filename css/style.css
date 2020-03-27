@@ -10774,6 +10774,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: #000000;
@@ -11545,6 +11549,8 @@ h1, h2, h3, h4, h5,
   font-size: 12px;
   border: none;
   cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 .btnAnimated:hover {
   -webkit-transform: translateY(-3px);
@@ -11568,11 +11574,19 @@ h1, h2, h3, h4, h5,
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .btnAnimated--yellow {
-  background-color: #ffbd39;
-  color: #000000;
+  background-color: #ffbd39 !important;
+  color: #000000 !important;
 }
 .btnAnimated--yellow::after {
-  background-color: #ffbd39;
+  background-color: #ffbd39 !important;
+}
+.btnAnimated--white {
+  background-color: #000000 !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
+.btnAnimated--white::after {
+  background-color: #000000;
 }
 .btnAnimated::after {
   content: "";

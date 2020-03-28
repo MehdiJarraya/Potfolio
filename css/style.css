@@ -2682,7 +2682,7 @@ textarea.form-control {
   border-bottom: 3px solid #ffbd39;
 }
 .form__input:focus:invalid {
-  border-bottom: 3px solid #040504;
+  border-bottom: 3px solid #999;
 }
 .form__input::-webkit-input-placeholder {
   color: #999;
@@ -2696,6 +2696,7 @@ textarea.form-control {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  color: #ffbd39;
 }
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -13085,8 +13086,8 @@ html, body {
   }
 }
 .book {
-  background-image: -o-linear-gradient(345deg, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 50%), url(../images/contactImage.jpg);
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 50%), url(../images/contactImage.jpg);
+  background-image: -o-linear-gradient(345deg, rgba(255, 255, 255, 0.6) 0%, rgba(153, 153, 153, 0.6) 50%, transparent 50%), url(../images/contactImage.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.6) 0%, rgba(153, 153, 153, 0.6) 50%, transparent 50%), url(../images/contactImage.jpg);
   background-size: 100%;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
@@ -13151,6 +13152,7 @@ html, body {
   }
 }
 .submit-button {
+  margin: auto;
   display: block;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -13158,10 +13160,9 @@ html, body {
   font-size: 0.75em;
   letter-spacing: 1px;
   height: 38px;
-  width: 120px;
+  width: 180px;
   line-height: 38px;
   overflow: hidden;
-  background: #4dbecf;
   border-radius: 3px;
   -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -13170,10 +13171,14 @@ html, body {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  background-color: #ffbd39;
+  border-radius: 10rem;
+  cursor: pointer;
 }
 .submit-button:hover, .submit-button:focus {
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  outline: 0;
 }
 .submit-button.animated {
   -webkit-animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
@@ -13181,7 +13186,7 @@ html, body {
 }
 .submit-button > span {
   display: block;
-  color: white;
+  color: #000000;
   text-align: center;
 }
 .submit-button > span.pre-state-msg {

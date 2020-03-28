@@ -2307,8 +2307,8 @@ html, body {
 .book {
 	// change ths 
     background-image: linear-gradient(105deg, 
-                                    rgba($white, .9) 0%,
-                                    rgba($black, .9) 50%,
+                                    rgba($white, .6) 0%,
+                                    rgba($grey-dark-2, .6) 50%,
                                     transparent 50%) ,
                             url(../images/contactImage.jpg);
     background-size: 100%;
@@ -2365,6 +2365,7 @@ url(../img/nat-10.jpg);
 
 
 .submit-button {
+	margin: auto;
   display: block;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -2372,19 +2373,23 @@ url(../img/nat-10.jpg);
   font-size: .75em;
   letter-spacing: 1px;
   height: 38px;
-  width: 120px;
+  width: 180px;
   line-height: 38px;
   overflow: hidden;
-  background: #4dbecf;
   border-radius: 3px;
   box-shadow: 0 15px 30px rgba(black,.1);
   border: 0;
   cursor: pointer;
   transition: all .3s ease;
-  
+  background-color: $primary;
+        border-radius: 10rem;
+        
+		cursor: pointer;
   &:hover,
   &:focus {
     box-shadow: 0 5px 15px rgba(black,.1);
+	// remove button outlne bleu
+	outline:0;
   }
   
   &.animated {
@@ -2393,7 +2398,7 @@ url(../img/nat-10.jpg);
   
   > span {
     display: block;
-    color: white;
+    color: $black;
     text-align: center;
     
     &.pre-state-msg {
@@ -2413,4 +2418,5 @@ url(../img/nat-10.jpg);
       margin-top: -76px;
     }
   }
+
 }

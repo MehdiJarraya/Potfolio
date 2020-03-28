@@ -20,4 +20,3 @@ const setInitialButtonState = function() {
   button.classList.remove("state-1", "state-2", "animated");
 };
 
-button.addEventListener("click", updateButtonMsg);

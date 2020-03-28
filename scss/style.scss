@@ -8,7 +8,13 @@ $black: #000000;
 $darken: #232931;
 
 $primary: #ffbd39;
-$secondary: #a0f669;
+$primary-dark :#FFA651;
+$primary-light:#ffd480;
+$secondary: #040504;
+$grey-dark-2: #999;
+// FONT
+$default-font-size: 1.6rem;
+
 
 
 
@@ -29,7 +35,7 @@ $secondary: #a0f669;
 
 html {
 	// 1rem =10px 
-	// font-size:10px;
+	font-size:10px;
 }
 body {
 	font-family: $font-primary;
@@ -2295,4 +2301,46 @@ html, body {
       transition-duration: 0s;
     }
   }
+}
+
+
+.book {
+	// change ths 
+    background-image: linear-gradient(105deg, 
+                                    rgba($white, .9) 0%,
+                                    rgba($black, .9) 50%,
+                                    transparent 50%) ,
+                            url(../images/contactImage.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($black, .2);
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg, 
+        rgba($white, .9) 0%,
+        rgba($white, .9) 65%,
+        transparent 65%) ,
+url(../img/nat-10.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, 
+        rgba($white, .9) 0%,
+        rgba($white, .9) 100%),
+url(../img/nat-10.jpg);
+    }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
 }

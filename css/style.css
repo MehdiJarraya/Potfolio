@@ -10966,8 +10966,8 @@ h1, h2, h3, h4, h5,
 }
 .ftco-navbar-light .navbar-brand {
   color: #fff;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
   color: #fff !important;
@@ -10985,8 +10985,8 @@ h1, h2, h3, h4, h5,
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
   font-size: 16px;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
@@ -11029,7 +11029,7 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 1.6rem;
     padding-top: 0;
     color: #fff;
   }
@@ -11037,8 +11037,8 @@ h1, h2, h3, h4, h5,
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
   color: #fff;
   border: 1px solid #ffbd39;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   padding-left: 18px;
   padding-right: 18px;
   background: #ffbd39;
@@ -11115,8 +11115,8 @@ h1, h2, h3, h4, h5,
   color: #fff !important;
   background: #ffbd39;
   border: none !important;
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
+  padding-top: 0.8rem !important;
+  padding-bottom: 0.8rem !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
   margin-top: 5px !important;
@@ -11166,8 +11166,8 @@ h1, h2, h3, h4, h5,
 }
 .ftco-navbar-light.scrolled .navbar-brand {
   color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
   font-size: 24px;
 }
 
@@ -12865,21 +12865,21 @@ html, body {
 .page-content {
   display: -ms-grid;
   display: grid;
-  grid-gap: 1rem;
-  padding: 1rem;
+  grid-gap: 1.6rem;
+  padding: 1.6rem;
   max-width: 1024px;
   margin: 0 auto;
   font-family: var(--font-sans);
 }
 @media (min-width: 600px) {
   .page-content {
-    -ms-grid-columns: 1fr 1rem 1fr;
+    -ms-grid-columns: 1fr 1.6rem 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 800px) {
   .page-content {
-    -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
+    -ms-grid-columns: 1fr 1.6rem 1fr 1.6rem 1fr 1.6rem 1fr;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -12893,7 +12893,7 @@ html, body {
       -ms-flex-align: end;
           align-items: flex-end;
   overflow: hidden;
-  padding: 1rem;
+  padding: 1.6rem;
   width: 100%;
   text-align: center;
   color: whitesmoke;
@@ -12973,7 +12973,7 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 1.6rem;
   -webkit-transition: -webkit-transform var(--d) var(--e);
   transition: -webkit-transform var(--d) var(--e);
   -o-transition: transform var(--d) var(--e);
@@ -12982,7 +12982,7 @@ html, body {
   z-index: 1;
 }
 .content > * + * {
-  margin-top: 1rem;
+  margin-top: 1.6rem;
 }
 
 .title {
@@ -13000,11 +13000,11 @@ html, body {
 
 .btn {
   cursor: pointer;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.65rem;
+  margin-top: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.035rem;
   text-transform: uppercase;
   color: white;
   background-color: black;
@@ -13026,15 +13026,15 @@ html, body {
   }
 
   .content {
-    -webkit-transform: translateY(calc(100% - 4.5rem));
-        -ms-transform: translateY(calc(100% - 4.5rem));
-            transform: translateY(calc(100% - 4.5rem));
+    -webkit-transform: translateY(calc(100% - 7.2rem));
+        -ms-transform: translateY(calc(100% - 7.2rem));
+            transform: translateY(calc(100% - 7.2rem));
   }
   .content > *:not(.title) {
     opacity: 0;
-    -webkit-transform: translateY(1rem);
-        -ms-transform: translateY(1rem);
-            transform: translateY(1rem);
+    -webkit-transform: translateY(1.6rem);
+        -ms-transform: translateY(1.6rem);
+            transform: translateY(1.6rem);
     -webkit-transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
     transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
     -o-transition: transform var(--d) var(--e), opacity var(--d) var(--e);

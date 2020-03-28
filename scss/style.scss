@@ -99,8 +99,8 @@ h1, h2, h3, h4, h5,
 
 	.navbar-brand {
 		color: $white;
-		padding-top: .7rem;
-		padding-bottom: .7rem;
+		padding-top: .8rem;
+		padding-bottom: .8rem;
 		&:hover, &:focus{
 			color: $white !important;
 		}
@@ -118,8 +118,8 @@ h1, h2, h3, h4, h5,
 		> .nav-item {
 			> .nav-link {
 				font-size: 16px;
-				padding-top: .7rem;
-				padding-bottom: .7rem;
+				padding-top: .8rem;
+				padding-bottom: .8rem;
 				padding-left: 20px;
 				padding-right: 20px;
 				color: $white;
@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5,
 				@include media-breakpoint-down(md){
 					padding-left: 0;
 					padding-right: 0;
-					padding-bottom: 1rem;
+					padding-bottom: 1.6rem;
 					padding-top: 0;
 					color: $white;
 				}
@@ -178,8 +178,8 @@ h1, h2, h3, h4, h5,
 				> a {
 					color: $white;
 					border: 1px solid $primary;
-					padding-top: .7rem;
-					padding-bottom: .7rem;
+					padding-top: .8rem;
+					padding-bottom: .8rem;
 					padding-left: 18px;
 					padding-right: 18px;
 					background: $primary;
@@ -269,8 +269,8 @@ h1, h2, h3, h4, h5,
 					color: $white !important;
 					background: $primary;
 					border: none !important;
-					padding-top: .5rem!important;
-					padding-bottom: .5rem !important;
+					padding-top: .8rem!important;
+					padding-bottom: .8rem !important;
 					padding-left: 20px !important;
 					padding-right: 20px !important;
 					margin-top: 5px !important;
@@ -324,8 +324,8 @@ h1, h2, h3, h4, h5,
 
 		.navbar-brand {
 			color: $white;
-			padding-top: 1rem;
-			padding-bottom: 1rem;
+			padding-top: 1.6rem;
+			padding-bottom: 1.6rem;
 			font-size: 24px;
 		}
 	}
@@ -2115,8 +2115,8 @@ html, body {
 
 .page-content {
   display: grid;
-  grid-gap: 1rem;
-  padding: 1rem;
+  grid-gap: 1.6rem;
+  padding: 1.6rem;
   max-width: 1024px;
   margin: 0 auto;
   font-family: var(--font-sans);
@@ -2137,7 +2137,7 @@ html, body {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  padding: 1rem;
+  padding: 1.6rem;
   width: 100%;
   text-align: center;
   color: whitesmoke;
@@ -2214,12 +2214,12 @@ html, body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 1.6rem;
   transition: transform var(--d) var(--e);
   z-index: 1;
   
   > * + * {
-    margin-top: 1rem;
+    margin-top: 1.6rem;
   }
 }
 
@@ -2238,11 +2238,11 @@ html, body {
 
 .btn {
   cursor: pointer;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.65rem;
+  margin-top: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.035rem;
   text-transform: uppercase;
   color: white;
   background-color: black;
@@ -2264,11 +2264,11 @@ html, body {
   }
   
   .content {
-    transform: translateY(calc(100% - 4.5rem));
+    transform: translateY(calc(100% - 7.2rem));
     
     > *:not(.title) {
       opacity: 0;
-      transform: translateY(1rem);
+      transform: translateY(1.6rem);
       transition:
         transform var(--d) var(--e),
         opacity var(--d) var(--e);

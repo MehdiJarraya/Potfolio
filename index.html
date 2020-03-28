@@ -583,7 +583,8 @@
 		<div class="container">
 			<div class="book">
 				<div class="book__form">
-					<form action="#" class="form">
+					<!-- using on submit we can be sure the from is valid ! ;) -->
+					<form id="contact-beautifull-form" class="form" action="#" onsubmit="return sendMail(event)">
 
 						<div class="form__group">
 							<input type="text" class="form__input" placeholder="Full name" id="name" required>
@@ -605,9 +606,18 @@
 							<label for="Message" class="form__label">Message</label>
 						</div>
 
+	
 
-						<a><a href="#" class="btnAnimated btnAnimated--yellow form__group">submit</a></a>
+						<a type="submit" href="#" class="btnAnimated btnAnimated--yellow btn">Download CV</a>
+
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btnAnimated btnAnimated--yellow">
+						  </div>
+
+
+						<button class="submit-button state-0 "><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">Sending...</span><span class="done-state-msg hide">Done!</span></button>
 					</form>
+		
 				</div>
 			</div>
 		</div>

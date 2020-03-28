@@ -2116,8 +2116,8 @@ html, body {
 .page-content {
   display: grid;
   grid-gap: 1.6rem;
-  padding: 1.6rem;
-  max-width: 1024px;
+//   padding: 1.6rem;
+//   max-width: 1024px;
   margin: 0 auto;
   font-family: var(--font-sans);
   
@@ -2133,6 +2133,7 @@ html, body {
 
 
 .card {  
+	margin-bottom: 30px;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -2201,7 +2202,7 @@ html, body {
     $i: index($imageIds, $id);
     
     &:nth-child(#{$i}):before {
-       background-image: url(https://images.unsplash.com/photo-#{$id}?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    //    background-image: url(https://images.unsplash.com/photo-#{$id}?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 	background-image: url("../images/#{$id}")
 
 }
@@ -2224,14 +2225,14 @@ html, body {
 }
 
 .title {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .copy {
   font-family: var(--font-serif);
-  font-size: 1.125rem;
+  font-size: 1.4rem;
   font-style: italic;
   line-height: 1.35;
 }

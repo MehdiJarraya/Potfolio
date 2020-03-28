@@ -2307,8 +2307,8 @@ html, body {
 .book {
 	// change ths 
     background-image: linear-gradient(105deg, 
-                                    rgba($white, .9) 0%,
-                                    rgba($black, .9) 50%,
+                                    rgba($white, .6) 0%,
+                                    rgba($grey-dark-2, .6) 50%,
                                     transparent 50%) ,
                             url(../images/contactImage.jpg);
     background-size: 100%;
@@ -2343,4 +2343,80 @@ url(../img/nat-10.jpg);
             width: 100%;
         }
     }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+
+@keyframes short-press {
+  0% {
+    transform: scale(1);
+  }
+  
+  50% {
+    transform: scale(.9);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+.submit-button {
+	margin: auto;
+  display: block;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: 1px;
+  height: 38px;
+  width: 180px;
+  line-height: 38px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 15px 30px rgba(black,.1);
+  border: 0;
+  cursor: pointer;
+  transition: all .3s ease;
+  background-color: $primary;
+        border-radius: 10rem;
+        
+		cursor: pointer;
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 15px rgba(black,.1);
+	// remove button outlne bleu
+	outline:0;
+  }
+  
+  &.animated {
+    animation: .75s short-press cubic-bezier(0.770, 0.000, 0.175, 1.000) forwards;
+  }
+  
+  > span {
+    display: block;
+    color: $black;
+    text-align: center;
+    
+    &.pre-state-msg {
+      transition: all .7s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+      transition-delay: .75s;
+    }
+  }
+  
+  &.state-1 {
+    .pre-state-msg {
+      margin-top: -38px;
+    }
+  }
+  
+  &.state-2 {
+    .pre-state-msg {
+      margin-top: -76px;
+    }
+  }
+
 }

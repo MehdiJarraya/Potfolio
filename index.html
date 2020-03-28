@@ -583,7 +583,8 @@
 		<div class="container">
 			<div class="book">
 				<div class="book__form">
-					<form action="#" class="form">
+					<!-- using on submit we can be sure the from is valid ! ;) -->
+					<form id="contact-beautifull-form" class="form" action="#" onsubmit="return sendMail(event)">
 
 						<div class="form__group">
 							<input type="text" class="form__input" placeholder="Full name" id="name" required>
@@ -604,10 +605,12 @@
 							<textarea name="message" id="" cols="30" rows="6" class="form__input" placeholder="Message"></textarea>
 							<label for="Message" class="form__label">Message</label>
 						</div>
-
-
-						<a><a href="#" class="btnAnimated btnAnimated--yellow form__group">submit</a></a>
+						<div class="form-group">
+						<button class="submit-button submit-button--yellow"><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">Sending...</span><span class="done-state-msg hide">Done!</span></button>
+					
+					</div>
 					</form>
+		
 				</div>
 			</div>
 		</div>

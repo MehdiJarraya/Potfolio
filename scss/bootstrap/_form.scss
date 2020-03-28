@@ -42,7 +42,7 @@ $default-font-size: 1.6rem;
         }
 
         &:focus:invalid {
-            border-bottom: 3px solid $secondary;
+            border-bottom: 3px solid $grey-dark-2;
         }
 
         &::-webkit-input-placeholder {
@@ -58,6 +58,7 @@ $default-font-size: 1.6rem;
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+        color: $primary;
     }
 
     &__input:placeholder-shown + &__label {

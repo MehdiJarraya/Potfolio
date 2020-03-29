@@ -754,7 +754,7 @@ h1, h2, h3, h4, h5,
 	letter-spacing: 2px;
 	font-weight: 600;
 	&:hover, &:active, &:focus {
-		outline: none;
+		outline: none !important;
 	}
 	&.btn-primary {
 		background: $primary;
@@ -815,6 +815,9 @@ h1, h2, h3, h4, h5,
 				color :$white;
 			}
 		}
+	}
+	&:focus{
+		outline:none !important;
 	}
 }
 
@@ -2422,4 +2425,18 @@ url(../img/nat-10.jpg);
 	&:hover {
 		color: $primary !important;
 	}
+}
+
+// not done I'cant remove the outline(button default  bleu border 
+a.button.btn {
+    background-color: black;
+    border: none;
+	color: white;
+	&:hover {
+		color: $primary;
+	}
+	&:focus{
+		outline:none !important;
+	}
+
 }

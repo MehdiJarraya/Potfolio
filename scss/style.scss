@@ -763,7 +763,7 @@ h1, h2, h3, h4, h5,
 		&:hover {
 			border: 1px solid $primary !important;
 			background: $primary !important;
-			color :$black !important;
+			color :$primary!important;
 		}
 		&.btn-outline-primary {
 			border: 2px solid $primary !important;
@@ -2119,8 +2119,7 @@ html, body {
 //   padding: 1.6rem;
 //   max-width: 1024px;
   margin: 0 auto;
-  font-family: var(--font-sans);
-  
+
   @media (min-width: $bpmd) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2231,9 +2230,7 @@ html, body {
 }
 
 .copy {
-  font-family: var(--font-serif);
   font-size: 1.4rem;
-  font-style: italic;
   line-height: 1.35;
 }
 
@@ -2368,7 +2365,6 @@ url(../img/nat-10.jpg);
 .submit-button {
 	margin: auto;
   display: block;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: .75em;

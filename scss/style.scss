@@ -2421,3 +2421,9 @@ url(../img/nat-10.jpg);
   }
 
 }
+
+.textHoverYellow {
+	&:hover {
+		color: $primary !important;
+	}
+}

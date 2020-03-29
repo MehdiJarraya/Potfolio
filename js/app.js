@@ -24,7 +24,7 @@ const sendMail = function(e) {
     "&to=mehdi.jarraya@gmail.com";
 
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://localhost:3000/contact");
+  xhr.open("POST", "https://portfoliobackk.herokuapp.com/contact");
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
   xhr.onreadystatechange = function() {

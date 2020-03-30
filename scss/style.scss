@@ -754,7 +754,7 @@ h1, h2, h3, h4, h5,
 	letter-spacing: 2px;
 	font-weight: 600;
 	&:hover, &:active, &:focus {
-		outline: none;
+		outline: none !important;
 	}
 	&.btn-primary {
 		background: $primary;
@@ -763,7 +763,7 @@ h1, h2, h3, h4, h5,
 		&:hover {
 			border: 1px solid $primary !important;
 			background: $primary !important;
-			color :$black !important;
+			color :$primary!important;
 		}
 		&.btn-outline-primary {
 			border: 2px solid $primary !important;
@@ -815,6 +815,9 @@ h1, h2, h3, h4, h5,
 				color :$white;
 			}
 		}
+	}
+	&:focus{
+		outline:none !important;
 	}
 }
 
@@ -2119,8 +2122,7 @@ html, body {
 //   padding: 1.6rem;
 //   max-width: 1024px;
   margin: 0 auto;
-  font-family: var(--font-sans);
-  
+
   @media (min-width: $bpmd) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2231,9 +2233,7 @@ html, body {
 }
 
 .copy {
-  font-family: var(--font-serif);
   font-size: 1.4rem;
-  font-style: italic;
   line-height: 1.35;
 }
 
@@ -2316,33 +2316,9 @@ html, body {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($black, .2);
 
-    @include respond(tab-land) {
-        background-image: linear-gradient(105deg, 
-        rgba($white, .9) 0%,
-        rgba($white, .9) 65%,
-        transparent 65%) ,
-url(../img/nat-10.jpg);
-        background-size: cover;
-    }
-
-    @include respond(tab-port) {
-        background-image: linear-gradient(to right, 
-        rgba($white, .9) 0%,
-        rgba($white, .9) 100%),
-url(../img/nat-10.jpg);
-    }
-
     &__form {
         width: 50%;
         padding: 6rem;
-
-        @include respond(tab-land) {
-            width: 65%;
-        }
-
-        @include respond(tab-port) {
-            width: 100%;
-        }
     }
 }
 
@@ -2368,7 +2344,6 @@ url(../img/nat-10.jpg);
 .submit-button {
 	margin: auto;
   display: block;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: .75em;
@@ -2426,4 +2401,18 @@ url(../img/nat-10.jpg);
 	&:hover {
 		color: $primary !important;
 	}
+}
+
+// not done I'cant remove the outline(button default  bleu border 
+a.button.btn {
+    background-color: black;
+    border: none;
+	color: white;
+	&:hover {
+		color: $primary;
+	}
+	&:focus{
+		outline:none !important;
+	}
+
 }

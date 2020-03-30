@@ -11212,6 +11212,9 @@ h1, h2, h3, h4, h5,
 }
 .owl-carousel .owl-item {
   opacity: 0.4;
+  float: none;
+  display: inline-block;
+  z-index: -1;
 }
 .owl-carousel .owl-item.active {
   opacity: 1;

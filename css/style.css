@@ -11597,7 +11597,7 @@ h1, h2, h3, h4, h5,
   font-weight: 600;
 }
 .btn:hover, .btn:active, .btn:focus {
-  outline: none;
+  outline: none !important;
 }
 .btn.btn-primary {
   background: #ffbd39;
@@ -11607,7 +11607,7 @@ h1, h2, h3, h4, h5,
 .btn.btn-primary:hover {
   border: 1px solid #ffbd39 !important;
   background: #ffbd39 !important;
-  color: #000000 !important;
+  color: #ffbd39 !important;
 }
 .btn.btn-primary.btn-outline-primary {
   border: 2px solid #ffbd39 !important;
@@ -11658,6 +11658,9 @@ h1, h2, h3, h4, h5,
   border: 1px solid transparent;
   background: #ffbd39;
   color: #fff;
+}
+.btn:focus {
+  outline: none !important;
 }
 
 .btnAnimated, .btnAnimated:link, .btnAnimated:visited {
@@ -12867,7 +12870,6 @@ html, body {
   display: grid;
   grid-gap: 1.6rem;
   margin: 0 auto;
-  font-family: var(--font-sans);
 }
 @media (min-width: 600px) {
   .page-content {
@@ -12987,9 +12989,7 @@ html, body {
 }
 
 .copy {
-  font-family: var(--font-serif);
   font-size: 1.4rem;
-  font-style: italic;
   line-height: 1.35;
 }
 
@@ -13088,33 +13088,9 @@ html, body {
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
-@media only screen and (max-width: 75em) {
-  .book {
-    background-image: -o-linear-gradient(345deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
-    background-size: cover;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .book {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url(../img/nat-10.jpg);
-    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
-  }
-}
 .book__form {
   width: 50%;
   padding: 6rem;
-}
-@media only screen and (max-width: 75em) {
-  .book__form {
-    width: 65%;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .book__form {
-    width: 100%;
-  }
 }
 
 @-webkit-keyframes short-press {
@@ -13149,7 +13125,6 @@ html, body {
 .submit-button {
   margin: auto;
   display: block;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 0.75em;
@@ -13197,4 +13172,20 @@ html, body {
 }
 .submit-button.state-2 .pre-state-msg {
   margin-top: -76px;
+}
+
+.textHoverYellow:hover {
+  color: #ffbd39 !important;
+}
+
+a.button.btn {
+  background-color: black;
+  border: none;
+  color: white;
+}
+a.button.btn:hover {
+  color: #ffbd39;
+}
+a.button.btn:focus {
+  outline: none !important;
 }

@@ -32,6 +32,7 @@ const sendMail = function(e) {
       // Requête finie, traitement ici.
       console.log("200");
       finalButtonMsg();
+      document.getElementById("contact-beautifull-form").reset();
     }
   };
 
